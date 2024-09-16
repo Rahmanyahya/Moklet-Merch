@@ -38,8 +38,8 @@ const Product = () => {
       <center>
         <div className="grid grid-cols-4 px-[10px] pr-[2rem] max-lg:grid-cols-2 gap-3 max-sm:grid-cols-1">
           {clothes.map((clothe, index) => (
-           <center>
-             <div key={index} className="relative w-[300px] h-[400px] px-3">
+           <center key={index}>
+             <div  className="relative w-[300px] h-[400px] px-3">
               <Image alt={clothe.productName} src={clothe.src} className="object-cover absolute -z-10" />
              
             

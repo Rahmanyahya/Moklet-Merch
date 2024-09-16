@@ -13,7 +13,7 @@ export default function Component() {
       <Carousel className="overflow-hidden" theme={{scrollContainer: {base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth ", snap: "snap-x"}, indicators: {base: "hidden"}, root: {leftControl: "absolute right-[201px] text-black top-[7.5rem] flex h-full items-center justify-center px-4 focus:outline-none", rightControl: "absolute text-black right-[150px] top-[7.5rem] flex h-full items-center justify-center px-4 focus:outline-none"}, control: {base: "inline-flex h-8 w-8 items-center justify-center border-2 border-black w-[54px] h-[54px]  sm:h-10 sm:w-10", icon: "h-[19.6px] w-[9.5px] text-black sm:h-6 sm:w-6"}}}>
          {
           item.map(item => (
-            <div className="flex h-full items-center justify-center ">
+            <div key={item} className="flex h-full items-center justify-center ">
             <center>
             <div className="grid grid-cols-3 max-xl:grid-cols-1" >
                

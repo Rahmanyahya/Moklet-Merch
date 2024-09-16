@@ -1,5 +1,4 @@
-import localFont from "next/font/local";
-import Slider from "../components/Carousesl"
+import Slider from "../../components/Carousesl"
 import Cta from "@/components/Cta";
 import Model from "@/components/Models"
 import Product from "@/components/Product";

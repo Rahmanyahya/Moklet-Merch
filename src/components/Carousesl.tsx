@@ -1,12 +1,10 @@
 "use client";
 
-import { Carousel, CustomFlowbiteTheme, theme } from "flowbite-react";
+import { Carousel } from "flowbite-react";
 import Image from "next/image";
-import Image1 from "../assets/Frame 34.png";
-import Image2 from "../assets/Resource.png";
-import Image3 from "../assets/Resource2.png";
-import { root } from "postcss";
-
+import Image1 from "@/assets/Frame 34.png";
+import Image2 from "@/assets/Resource.png";
+import Image3 from "@/assets/Resource2.png";
 const ImageList = [
   {
     id: "Image1",
@@ -42,7 +40,7 @@ export function Component() {
            <div className="text-white absolute text-left bottom-[63px] left-[248px] max-sm:left-[3rem] max-lg:left-[7rem] ">
         <h1 className="text-5xl font-extrabold max-sm:text-2xl">DIES NATALIES</h1>
         <p className="text-xl max-sm:text-sm">
-          Special event for Telkom Malang <br /> Vocational School's birthday
+          Special event for Telkom Malang <br /> Vocational School&rsquo;s birthday
           event.
         </p>
         <div className="border-white border-2 py-[0.8rem] w-[76%] max-sm:py-[0.3rem] ">
