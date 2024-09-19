@@ -21,15 +21,15 @@ const Product: React.FC<Card> = ({ src, hargaNormal, hargaDiscount, product, des
                 <div>
                     {hargaDiscount === "" ? (
                         <div className="text-left">
-                            <h1 className="font-bold text-[20px] text-[#BE1E2D]">IDR {hargaNormal}</h1>
-                            <p className="text-[#BE1E2D] font-normal text-[10px]">{description}</p>
+                            <h1 className="font-bold text-[20px] text-primaryRed">IDR {hargaNormal}</h1>
+                            <p className="text-primaryRed font-normal text-[10px]">{description}</p>
                         </div>
                     ) : (
                         <div className="text-left flex gap-1 items-start">
                             <p className="font-bold text-[10px] text-gray-500 line-through">IDR {hargaNormal}</p>
                             <div>
-                                <h1 className="font-bold text-[20px] text-[#BE1E2D] mt-[-5px]">IDR {hargaDiscount}</h1>
-                                <p className="text-[#BE1E2D] font-normal text-[10px]">{description}</p>
+                                <h1 className="font-bold text-[20px] text-primaryRed mt-[-5px]">IDR {hargaDiscount}</h1>
+                                <p className="text-primaryRed font-normal text-[10px]">{description}</p>
                             </div>
                         </div>
                     )}
