@@ -43,19 +43,16 @@ export default function Calendar() {
         <div className="m-[10px] md:m-[12px] ">
           <div className="w-full h-[48px] bg-red-500 rounded-[4px] items-center text-black flex justify-center">
             <h5 className="text-[16px] font-semibold ">
-              Pertandingan Hari Ini
+              Team Classement
             </h5>
           </div>
-          <div className="flex justify-between gap-x-[12px] my-[8px] ">
+          {/* <div className="flex justify-between gap-x-[12px] my-[8px] ">
             <div className="w-full h-[40px] md:h-[48px] rounded-[4px] text-black flex justify-center p-[10px] bg-red-100 ">
               <h5 className="md:text-[16px] text-[14px] font-semibold">Tim A</h5>
             </div>
-            <div className="w-full h-[40px] md:h-[48px] rounded-[4px] text-black flex justify-center p-[10px] bg-red-100 ">
-              <h5 className="md:text-[16px] text-[14px] font-semibold">Tim B</h5>
-            </div>
-          </div>
+          </div> */}
 
-          <table className="w-full">
+          <table className="w-full mt-4">
             <thead>
               <tr className="flex gap-x-[12px]">
                 <th className="w-full max-w-[56px] h-[48px] rounded-[4px] flex justify-center items-center text-black border border-black p-[12px]">
@@ -121,7 +118,7 @@ export default function Calendar() {
                     {data.points}
                   </td>
                   <td className="w-full max-w-[480px] h-[48px] rounded-[4px] flex justify-center items-center text-black p-[12px]">
-                  <IoCheckmarkCircleSharp className="color-red"/> <IoIosCloseCircle />
+                  <IoCheckmarkCircleSharp className="color-red"/> <IoIosCloseCircle /> <IoIosCloseCircle/>
                   </td>
                 </tr>
               ))}

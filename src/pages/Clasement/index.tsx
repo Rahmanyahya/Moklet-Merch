@@ -1,9 +1,16 @@
-import Clasement from "@/components/Clasement";
+import TopPlayer from "@/components/TopPlayer"
+import Footer from "@/components/Footer"
+import Navbar from "@/components/Navbar"
 
-const clasement = () => {
+
+const topplayer = () => {
     return (
-     <Clasement/>
+        <>
+        <Navbar/>
+        <TopPlayer/>
+        <Footer/>
+        </>
     )
 }
 
-export default clasement
+export default topplayer

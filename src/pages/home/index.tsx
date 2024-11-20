@@ -10,8 +10,7 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
-    <div className="min-h-screen bg-[#E3F2FF]">
-        <Navbar/>
+    <div className=" bg-[#E3F2FF]">
         <Slider/>
         <Cta/>
         <Clasement/>
@@ -19,6 +18,9 @@ export default function Home() {
         {/* <Product/>*/}
         {/* <News/>  */}
         <Footer/>
+        <div className="fixed top-0 left-0 right-0">
+        <Navbar/>
+        </div>
         </div>
     </>
   );

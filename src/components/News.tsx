@@ -4,12 +4,43 @@ import Navbar from "./Navbar"; // Make sure the path to Navbar is correct
 import Image1 from "@/assets/Timnas3.jpg";
 import Image2 from "@/assets/Timnas2.jpeg";
 import Image3 from "@/assets/timnas4.jpeg";
+import logo from "../assets/IMMORTAL CUP.png";
+import Image from "next/image";
 
 export default function Component() {
   return (
     <>
       {/* Render the Navbar */}
-      <Navbar />
+      <nav>
+        <div className="flex gap-10 absolute mt-8 z-20 w-full items-center p-4 bg-transparent text-white pt-0"> {/* Changed bg-blue-700 to bg-blue-500 */}
+          <a href="/" className="flex items-center ml-20">
+            <Image
+              src={logo}
+              alt="Moklet Merch Logo"
+              className="h-[40px] w-[200px] mr-2"
+            />
+            <span className="font-bold text-lg"></span>
+          </a>
+
+          {/* Link */}
+          <div className="flex justify-between items-center w-full mr-20 text-2xl">
+            <div className="gap-x-[50px] flex">
+              <a href="../home" className="hover:text-gray-300">
+                Home
+              </a>
+              <a href="../News" className="hover:text-gray-300">
+                News
+              </a>
+              <a href="../Clasement" className="hover:text-gray-300">
+                Top Player
+              </a>
+              <a href="./Footer" className="hover:text-gray-300">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       {/* Set a light blue background */}
       <div className="bg-[#E3F2FF] min-h-screen">
