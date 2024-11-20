@@ -2,9 +2,9 @@
 
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
-import Image1 from "@/assets/Frame 34.png";
-import Image2 from "@/assets/Resource.png";
-import Image3 from "@/assets/Resource2.png";
+import Image1 from "@/assets/Timnas3.jpg";
+import Image2 from "@/assets/Timnas2.jpeg";
+import Image3 from "@/assets/timnas4.jpeg";
 const ImageList = [
   {
     id: "Image1",
@@ -56,14 +56,13 @@ export function Component() {
             />
             <div className="text-white absolute text-left bottom-[63px] left-[248px] max-sm:left-[3rem] max-lg:left-[7rem] ">
               <h1 className="text-5xl font-extrabold max-sm:text-2xl">
-                DIES NATALIES
+                Timnas Indonesia 
               </h1>
               <p className="text-xl mt-[10px] mb-[20px] max-sm:text-sm">
-                Special event for Telkom Malang <br /> Vocational School&rsquo;s
-                birthday event.
+                Timnas Indonesia Siap Menjamu Arab Saudi<br /> Pada Kualifikasi Piala Dunia
               </p>
-              <button className="border-white border-2 py-[0.8rem] text-lg font-bold w-[76%] max-sm:py-[0.3rem] hover:bg-primaryRed hover:border-primaryRed duration-200">
-                Pre Order Now!
+              <button className="border-white border-2 py-[0.8rem] text-lg font-bold w-[60%] max-sm:py-[0.3rem] hover:bg-primaryRed hover:border-primaryRed duration-200">
+                Read
               </button>
             </div>
           </div>

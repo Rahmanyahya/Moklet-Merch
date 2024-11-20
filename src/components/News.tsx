@@ -1,71 +1,151 @@
 "use client";
 
-import { Carousel } from "flowbite-react";
-import Image from "next/image";
-import MokletMerchLogo from "@/assets/MokletMerchLogo.png";
-
-const item = [1, 2, 3];
+import Navbar from "./Navbar"; // Make sure the path to Navbar is correct
+import Image1 from "@/assets/Timnas3.jpg";
+import Image2 from "@/assets/Timnas2.jpeg";
+import Image3 from "@/assets/timnas4.jpeg";
 
 export default function Component() {
   return (
-    <section className="h-[320px] mt-[58px] w-screen sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel
-        className="overflow-hidden"
-        theme={{
-          scrollContainer: {
-            base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth ",
-            snap: "snap-x",
-          },
-          indicators: { base: "hidden" },
-          root: {
-            leftControl:
-              "absolute right-[201px] text-black top-[7.5rem] flex h-full items-center justify-center px-4 focus:outline-none",
-            rightControl:
-              "absolute text-black right-[150px] top-[7.5rem] flex h-full items-center justify-center px-4 focus:outline-none",
-          },
-          control: {
-            base: "inline-flex h-8 w-8 items-center justify-center border-2 border-black w-[54px] h-[54px]  sm:h-10 sm:w-10",
-            icon: "h-[19.6px] w-[9.5px] text-black sm:h-6 sm:w-6",
-          },
-        }}
-      >
-        {item.map((item) => (
-          <div key={item} className="flex h-full items-center justify-center ">
-            <center>
-              <div className="grid grid-cols-3 max-xl:grid-cols-1">
-                <div className="">
-                  <h1 className="text-[40px] font-bold text-black top-1/3 mt-[20px] absolute ">
-                    UP COMING
-                  </h1>
-                </div>
-                <div>
-                  <Image
-                    alt="Moklet Merch"
-                    src={MokletMerchLogo}
-                    className=""
+    <>
+      {/* Render the Navbar */}
+      <Navbar />
+
+      {/* Set a light blue background */}
+      <div className="bg-[#E3F2FF] min-h-screen">
+        <div className="container mx-auto mt-40 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {/* News Card 1 */}
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                className="rounded-t-lg"
+                src={Image1.src}
+                alt="Technology acquisitions"
+              />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Prediksi Skor China vs Jepang: Kemenangan Samurai Biru Bisa
+                  Untungkan Timnas Indonesia
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Prediksi skor pertandingan China vs Jepang di ronde 3
+                Kualifikasi Piala Dunia 2026 dapat menguntungkan Timnas
+                Indonesia.
+              </p>
+              <a
+                href="#"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  className="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
-                </div>
-                <div className="text-left mt-[2rem]">
-                  <h1 className="text-[32px] font-bold  text-primaryRed ">
-                    Moklet Merch x Mokleters
-                  </h1>
-                  <p className="mt-[20.95px] mb-[20px] font-normal text-[24px] text-defBlack">
-                    Clothing Colaboration and
-                    <br /> several other interesting
-                    <br /> accecories
-                  </p>
-                  <a
-                    href=""
-                    className="underline hover:text-primaryRed text-[24px] text-defBlack"
-                  >
-                    Click Here
-                  </a>
-                </div>
-              </div>
-            </center>
+                </svg>
+              </a>
+            </div>
           </div>
-        ))}
-      </Carousel>
-    </section>
+
+          {/* News Card 2 */}
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                className="rounded-t-lg"
+                src={Image2.src}
+                alt="Technology acquisitions"
+              />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Berita Terkini Seputar Timnas: Update dan Analisis Terbaru
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Ikuti perkembangan terbaru dari Timnas Indonesia, termasuk
+                analisis pertandingan dan berita eksklusif lainnya.
+              </p>
+              <a
+                href="#"
+                className="inline-flex items-center mt-16 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  className="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          {/* News Card 3 */}
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                className="rounded-t-lg"
+                src={Image3.src}
+                alt="Technology acquisitions"
+              />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Jadwal Pertandingan dan Prediksi Timnas di Kualifikasi
+                </h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Cek jadwal lengkap pertandingan Timnas di kualifikasi dan
+                prediksi performa mereka menghadapi lawan-lawan tangguh.
+              </p>
+              <a
+                href="#"
+                className="inline-flex items-center mt-16 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  className="w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

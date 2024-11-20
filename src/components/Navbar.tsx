@@ -1,16 +1,16 @@
 import React from "react";
-import logo from "../assets/MokletMerchLogo2.png";
+import logo from "../assets/IMMORTAL CUP.png";
 import Image from "next/image";
 
 const Navbar: React.FC = () => {
   return (
     <nav>
-      <div className="flex gap-10 absolute z-20 w-full items-center p-4 bg-transparent text-white pt-0">
+      <div className="flex gap-10 absolute mt-8 *:z-20 w-full items-center p-4 bg-transparent text-white pt-0">
         <a href="/" className="flex items-center ml-20">
           <Image
             src={logo}
             alt="Moklet Merch Logo"
-            className="h-[156px] w-[156px] mr-2 "
+            className="h-[40px] w-[200x] mr-2 "
           />
           <span className="font-bold text-lg"></span>
         </a>
@@ -18,23 +18,18 @@ const Navbar: React.FC = () => {
         {/* link */}
         <div className="flex justify-between items-center w-full mr-20 text-2xl">
           <div className="gap-x-[50px] flex">
-            <a href="/" className="hover:text-gray-300 ">
-              Product
+            <a href="../home" className="hover:text-gray-300 ">
+              Home
             </a>
-            <a href="/" className="hover:text-gray-300">
-              How To Order
+            <a href="../News" className="hover:text-gray-300">
+              News
             </a>
-            <a href="/" className="hover:text-gray-300">
-              Pre-release
+            <a href="../Clasement" className="hover:text-gray-300">
+              Clasement
             </a>
-          </div>
-          {/* search */}
-          <div>
-            <input
-              type="text"
-              className="bg-transparent border-b-2 border-white text-white placeholder-white focus:outline-2 focus:border-white"
-              placeholder="Search"
-            />
+            <a href="./Footer" className="hover:text-gray-300">
+              Contact
+            </a>
           </div>
         </div>
       </div>
